@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Alegreya', serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.2rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #777;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+}
+
+.viewContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.viewContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.viewText h1 {
+  font-size: 4rem;
+}
+
+.viewText p {
+  font-size: 2rem;
+}
+
+.darkTheme {
+  background: #111;
+}
+
+.lightTheme {
+  background: #fff;
+}
+
+.themeToggleBtn {
+  position: fixed;
+  top: 3rem;
+  right: 3rem;
+}
+
+.colorOptions {
+  position: fixed;
+  top: 6rem;
+  right: 3rem;
+}
+
+.colorToggleBtn,
+.themeToggleBtn {
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.colorToggleIcon,
+.themeToggleIcon {
+  font-size: 2rem;
+  /* filter: drop-shadow(0.05rem 0.05rem 0.1rem #222); */
+}
+
+.colorToggleBtn p,
+.themeToggleBtn p {
+  margin-left: 0.6rem;
+  font-size: 1.6rem;
+  /* text-shadow: 0.05rem 0.05rem 0.1rem #222; */
+}
+
+.colorPalette {
+  padding: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  height: 350px;
+  width: 300px;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: scroll;
+  border-radius: 0.1rem;
+  background: #222;
+}
+
+.color {
+  margin: 0.6rem;
+  height: 50px;
+  width: 50px;
+  border: 1px solid #bbb;
+  border-radius: 50%;
+  background: #000;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 0.8rem;
+  padding: 0.6rem 1.2rem;
+  color: #333;
+  font-size: 1.4rem;
+  background: wheat;
+  cursor: pointer;
+  border: 2px solid #000;
+}
+
+@media screen and (max-width: 1020px) {
+  .viewText h1 {
+    font-size: 2.8rem;
+  }
+
+  .viewText p {
+    font-size: 1.4rem;
+  }
+
+  .colorToggleIcon,
+  .themeToggleIcon {
+    font-size: 1.6rem;
+  }
+
+  .colorToggleBtn p,
+  .themeToggleBtn p {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .viewText h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .viewText h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .themeToggleBtn {
+    right: 2rem;
+  }
+
+  .colorOptions {
+    right: 2rem;
+  }
+
+  .viewText h1 {
+    font-size: 1.6rem;
+  }
+
+  .viewText p {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .viewText h1 {
+    font-size: 1.2rem;
+  }
+
+  .viewText p {
+    font-size: 1rem;
+  }
+
+  button {
+    margin-top: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .colorPalette {
+    width: 280px;
+  }
+
+  .color {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .colorPalette {
+    width: 260px;
+  }
+
+  .themeToggleBtn {
+    right: 1.2rem;
+  }
+
+  .colorOptions {
+    right: 1.2rem;
+  }
+}
